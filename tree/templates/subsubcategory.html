@@ -1,0 +1,9 @@
+{% extends "templates/subcategory.html" %}
+
+{% block subcateg %}
+    {%for subcategory in subsubcategories %}
+      <p> {{subcategory.name}}</p>
+    {%endfor%}
+    
+{%endblock%}
+

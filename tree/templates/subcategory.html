@@ -1,0 +1,12 @@
+{% extends "templates/index.html" %}
+
+{% block items %}
+    {%for subcategory in subcategories %}
+      <p><a href="/app/{{category_id}}/{{subcategory.id}}/products"> {{subcategory.name}} ></a></p>
+    {%endfor%}
+    
+{%endblock%}
+
+
+
+products
